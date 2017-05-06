@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/american_football_1" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/global_scorecard_padding"
+        android:paddingTop="@dimen/global_scorecard_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/team_scorecard_margin"
+            android:layout_marginRight="@dimen/team_scorecard_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/team_scorecard_bottom_padding">
+
+            <TextView
+                android:id="@+id/text_score_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/starting_score"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/button_touchdown_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:onClick="click_touchdown_a"
+                android:text="@string/touchdown" />
+
+            <Button
+                android:id="@+id/button_field_goal_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:onClick="click_field_goal_a"
+                android:text="@string/field_goal" />
+
+            <Button
+                android:id="@+id/button_safety_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:onClick="click_safety_a"
+                android:text="@string/safety" />
+
+            <Button
+                android:id="@+id/button_extra_2_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:onClick="click_extra_2_a"
+                android:text="@string/extra_2_points" />
+
+            <Button
+                android:id="@+id/button_extra_1_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorSecondaryDark"
+                android:onClick="click_extra_1_a"
+                android:text="@string/extra_1_point" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:id="@+id/text_score_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/starting_score"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/button_touchdown_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:onClick="click_touchdown_b"
+                android:text="@string/touchdown" />
+
+            <Button
+                android:id="@+id/button_field_goal_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:onClick="click_field_goal_b"
+                android:text="@string/field_goal" />
+
+            <Button
+                android:id="@+id/button_safety_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:onClick="click_safety_b"
+                android:text="@string/safety" />
+
+            <Button
+                android:id="@+id/button_extra_2_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:onClick="click_extra_2_b"
+                android:text="@string/extra_2_points" />
+
+            <Button
+                android:id="@+id/button_extra_1_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:onClick="click_extra_1_b"
+                android:text="@string/extra_1_point" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_points"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/white"
+        android:onClick="click_new_game"
+        android:text="@string/new_game"
+        android:textStyle="bold"/>
+</RelativeLayout>

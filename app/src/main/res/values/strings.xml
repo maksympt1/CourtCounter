@@ -1,0 +1,11 @@
+<resources>
+    <string name="starting_score">0</string>
+    <string name="app_name">Court Counter</string>
+    <string name="touchdown">Touchdown</string>
+    <string name="field_goal">Field Goal</string>
+    <string name="safety">Safety</string>
+    <string name="extra_2_points">Extra 2 points</string>
+    <string name="extra_1_point">Extra 1 point</string>
+    <string name="new_game">New Game</string>
+    <string name="image_description">American Football ball in the dark</string>
+</resources>
